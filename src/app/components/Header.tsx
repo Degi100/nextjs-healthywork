@@ -1,15 +1,17 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export const Header:React.FC = () => {
-return <header className='navbar bg-base-100'>
-    <div className="navbar-start">LOGO</div>
+return <header className='navbar '>
+    <div className="navbar-center"><Image src="/assets/logoComplete.png" alt="logo" height="100" width="400"/></div>
 
     <div className="navbar-end">
-        <div className="px-3"><Link href='/'>Startseite</Link> </div>
-        <div className="px-3"><Link href='/unternehmen'>Unternehmen</Link> </div>
-        <div className="px-3"><Link href='/leistungen'>Leistungen</Link> </div>
-        <div className="px-3"><Link href='/kontakt'>Kontakt</Link> </div>
-        <div className="px-3"><Link href='/impressum'>Impressum</Link> 
+        <button className="px-3 btn btn-ghost "><Link href='/'>Startseite</Link> </button>
+        <div className="px-3 btn btn-ghost"><Link href='/unternehmen'>Unternehmen</Link> </div>
+        <div className="px-3 btn btn-ghost"><Link href='/leistungen'>Leistungen</Link> </div>
+        <div className="px-3 btn btn-ghost"><Link href='/kontakt'>Kontakt</Link> </div>
+        <div className="px-3 btn btn-ghost"><Link href='/impressum'>Impressum</Link> 
+
         </div>
     </div>
 </header>
